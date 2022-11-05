@@ -15,6 +15,8 @@ for bucket in iterator:
 URL = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5"
 get_currency(URL)
 
+
+
 # BASE_DIR = pathlib.Path(__file__).parent.resolve()
 # x = r'C:\Users\Admin\Desktop\Stas\CI-CD\start.py'
 
@@ -29,14 +31,14 @@ get_currency(URL)
 #     print(f"'{file_name}' has been uploaded to '{S3_BUCKET_NAME}'")
 
 # # upload_files(f"{BASE_DIR}\\demo.txt", S3_BUCKET_NAME)
-      
+
 # upload_files(x,S3_BUCKET_NAME ,'start.py')
 
 
 """"Upload file on bucket """
 
 BASE_DIR = pathlib.Path(__file__).parent.resolve()
-x = r'.\currency.txt'
+x = r'.\\currency.txt'
 
 
 s3_client = boto3.client("s3", region_name=AWS_REGION)
