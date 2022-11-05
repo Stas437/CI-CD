@@ -38,7 +38,7 @@ get_currency(URL)
 """"Upload file on bucket """
 
 BASE_DIR = pathlib.Path(__file__).parent.resolve()
-x = r'C:\Users\dev.itstep\Desktop\Stas\CI-CD\currency.txt'
+x = '.\\currency.txt'
 
 
 s3_client = boto3.client("s3", region_name=AWS_REGION)
