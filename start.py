@@ -6,11 +6,11 @@ from lib.currency import get_currency
 AWS_REGION = "eu-west-3"
 S3_BUCKET_NAME = "stas346"
 
-resource = boto3.resource("s3", region_name=AWS_REGION)
-iterator = resource.buckets.all()
-print("Listing Amazon S3 Buckets:")
-for bucket in iterator:
-    print(f"-- {bucket.name}")
+# resource = boto3.resource("s3", region_name=AWS_REGION)
+# iterator = resource.buckets.all()
+# print("Listing Amazon S3 Buckets:")
+# for bucket in iterator:
+#     print(f"-- {bucket.name}")
 
 URL = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5"
 get_currency(URL)
