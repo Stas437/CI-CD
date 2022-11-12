@@ -35,7 +35,7 @@ get_currency(URL)
 # upload_files(x,S3_BUCKET_NAME ,'start.py')
 
 
-""""Upload file on bucket """
+""""Upload file on bucket"""
 
 BASE_DIR = pathlib.Path(__file__).parent.resolve()
 x = r'.//currency.txt'
